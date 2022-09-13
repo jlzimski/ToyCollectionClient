@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap';
+import Auth from '../../auth/Auth';
 
 const Header = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -21,8 +22,13 @@ const Header = (props) => {
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
-            <NavItem>
+          <NavItem>
               <NavLink href="/components/">Components</NavLink>
+            </NavItem>
+            <NavItem>
+            <NavLink >
+              <Auth />
+            </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">

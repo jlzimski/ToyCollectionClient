@@ -1,14 +1,17 @@
 import React from 'react';
 import { Container, Row } from 'reactstrap';
+import Login from './Login';
+import Signup from './Signup';
 
 const Auth = (props) => {
     return(
-        <Container className='auth-container'>
+        <Container id='auth'>
             <Row>
-                Login
+                <Login />
             </Row>
+            <br />
             <Row>
-                Signup
+                <Signup />
             </Row>
         </Container>
     )
